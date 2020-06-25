@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DesroyTrespass : MonoBehaviour
 {
+    
     void OnTriggerExit(Collider other) {
         Destroy(other.gameObject);
     }

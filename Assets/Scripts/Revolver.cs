@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Revolver : MonoBehaviour
 {
-
+    //This script is attached to the plane and it serves the sole purpose of moving the plane 
+    //around the arena in an up & down motion at a speed that doesn't make it easy for the 
+    //player to shoot it down 
     private float timeCounter = 0 ;
     public float speed ; 
     private float width = 2000 ; 

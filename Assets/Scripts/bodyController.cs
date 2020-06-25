@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class bodyController : MonoBehaviour
 {
+
+    //allows player to move the robot's body
     private float maximumY =45.0f ; 
     private float minimumY = -45.0f ;
 

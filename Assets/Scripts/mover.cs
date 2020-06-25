@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class mover : MonoBehaviour
 {
+    //moves the missile in the direction it was shot in and enables gravity on the plane 
+    //when the missile hits the plane in order to simulate the plane crashing down 
     public float speed ; 
 
     public AudioSource missile ; 

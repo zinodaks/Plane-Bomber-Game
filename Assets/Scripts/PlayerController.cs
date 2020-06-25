@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
  
     public void move() { 
+      //allow player to move around the arena
         horizontal = Input.GetAxis("Horizontal") * speed;
         vertical = Input.GetAxis("Vertical") * speed;
         Vector3 movement = new Vector3(horizontal, 0.0f, vertical);
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
        
     
     public void shoot(){
+      //shoot missiles as long the player has ammo 
       if(ammoCount > 0 ) {
        if (Input.GetButton("Fire1") && Time.time  > nextFire)
         {
@@ -54,7 +56,7 @@ public class PlayerController : MonoBehaviour
     private GameObject ammo;
 
     public void generateAmmo(){
-      
+      // create ammo pickables at different random places around the arena 
         if(ammo == null){
           ammo =  Instantiate(ammoPrefab) ;
           float randomX = Random.Range(0,1900);

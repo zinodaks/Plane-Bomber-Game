@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+
+    //this script is attached to the camera and serves to allow the camera to move with the player and 
+    //to allow the player to look around the arena
     public float speed = 3.0f;
     public float speedUp = 2.0f;
     
